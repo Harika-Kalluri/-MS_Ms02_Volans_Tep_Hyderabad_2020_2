@@ -1,0 +1,88 @@
+Delivered-To: nikhilandhugula502@gmail.com
+Received: by 2002:a19:ae0b:0:0:0:0:0 with SMTP id f11csp250259lfc;
+        Wed, 15 Apr 2020 01:01:48 -0700 (PDT)
+X-Received: by 2002:a63:e1e:: with SMTP id d30mr24951169pgl.369.1586937708041;
+        Wed, 15 Apr 2020 01:01:48 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1586937708; cv=none;
+        d=google.com; s=arc-20160816;
+        b=talEI5T7b8Umojf4klsovx8oUCErg2v+zBECK2t5B3R6O+dXJ3qPCaItBv1bzNyVrf
+         rZVzOYH8EVwS3tvaZuVttJZjczpqjXzIwEdN11A+1gTUU+MCMw0JfSdX8FwY4MhW/Hiz
+         a7f4QQcE8fVBj7Ii4XAYcvxvWQwqNzRshpm57IhSrJK3uGeAzWiQJI5P14+AVqD6hFIg
+         d3/z6f7AafvM8KYGvTl+toRUQxSszgl2+W0RJzdyuZmORF6xPezBz9HSpdwjCylqeWGf
+         ABE22M2IemjCstB8yMqB6ogxYo+Vw/FzqNYgrkz/0jmbEz00VC+1FuvDX+Zu0PYKxZUv
+         05BA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:mime-version:to:from:message-id:date
+         :dkim-signature;
+        bh=nGZ9tHBnMwXCTGjfFi/J5eVXenOvFjzNP7fNkUB3HRg=;
+        b=Ec3Vrn5yNorGyNWc87WhJF247+1tGqg5kSSlRXkDnXKjql6uV2eXcBL41oyKoFMYo5
+         bUQiL9a/FtcYmioit1FtMfYmBq6zf3U+ljnlJ19Q7qqK0ZO9pQ1RnTFknFA48HklcpW5
+         exNVDtMNfP8cfpXkRs+t4gLDYskKpSzf9Kdg+WxL+gbYLS2Avq6k1HfhXoYZ3IjtmWEE
+         dF/16Mlmps3oCSPPA7vYBoW9GR2p794RkMlcHXurVIxqy547JSiaeUrHIhsUdH3HNdbS
+         jVMFZmUrHroMBTnYhhruYQy0f6XR+mkbFfVMDWXBmNV3pBnCConPXe4gY1i3ETX8VG2F
+         ZSug==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b="CKfZ/YrA";
+       spf=pass (google.com: domain of dayakarkurrella@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=dayakarkurrella@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <dayakarkurrella@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id z21sor8781244pjr.26.2020.04.15.01.01.46
+        for <nikhilandhugula502@gmail.com>
+        (Google Transport Security);
+        Wed, 15 Apr 2020 01:01:48 -0700 (PDT)
+Received-SPF: pass (google.com: domain of dayakarkurrella@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b="CKfZ/YrA";
+       spf=pass (google.com: domain of dayakarkurrella@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=dayakarkurrella@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=date:message-id:from:to:mime-version:content-transfer-encoding;
+        bh=nGZ9tHBnMwXCTGjfFi/J5eVXenOvFjzNP7fNkUB3HRg=;
+        b=CKfZ/YrA4/0Rsx6Un/oz/L69zHKj0O+UV/8y5S4W6x81YyyB+zWENacifcB5eEpU28
+         BeprpIHt4Z/tBLCnlWFm1O/gRPzWOZau+7dUOrziAQrAOKvzrOyvpfaXFDSbXcH637zT
+         AUAn3ZdXAEpwkGi2Zd4j4sK5JsBGJflRoA2eJY5dmoctzBjjppbu5DFNA0+URcyCmWD9
+         FcThXmq22wNJe8tQtMj+mUls9SX695W5pmZcrkNzd9DNt/6hgNX488DoWHUgS3zlmYIs
+         UhftCPSWfa7fApbDrKf2ImUFRBsBowy/9sBlWInPTQ0W0QnVaXhmi1wDiTFDkVTOyVoq
+         y4YQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:date:message-id:from:to:mime-version
+         :content-transfer-encoding;
+        bh=nGZ9tHBnMwXCTGjfFi/J5eVXenOvFjzNP7fNkUB3HRg=;
+        b=nn/uTKVrYmqh2JDfIMTGGSpI6gA6Gg26pn64cND/w9v2pYB9tFbjAGKk2JnF0FojMi
+         lnVM+214LaVE87XjRicpJOPGgJf98Fxug9E2SRcNzF08jlGC88GXLqsCxMLEzg0VRTys
+         wuvFY0ltVQ/nOLqro4rNX/s+NOuyL/7/WBVTulMFe78RolJmyzv7VzFuEAqsZhGWgytP
+         DethQrRt2zreX+u7u8EGjnmcU0UWdTMbDxqAQ3eiZeulDhlsDLDSr9TKIETEEdTYLsV+
+         xxsvyXeBAdSt5OCemjvU0QhwVZMuTWfgQYo5TrPbHCvucx2iJYRYTcqVFsu/VvSbwVPu
+         WyRw==
+X-Gm-Message-State: AGi0PuaCMKTS4LRURlmm7qz+X+2yv/CxIn6q8LdGSg+hMUVOpHIIGqSH
+	xHRvJE5SizWT+RyhWpYJd2r5yckzNXU=
+X-Google-Smtp-Source: APiQypKswq3dWLJ9gLgWAfJwIZfCa78tn49qvIC5+yPLFTdw7tatwBJML7LLBzmejJikrtr9lbdOAg==
+X-Received: by 2002:a17:90b:19d1:: with SMTP id nm17mr4653733pjb.135.1586937705914;
+        Wed, 15 Apr 2020 01:01:45 -0700 (PDT)
+Return-Path: <dayakarkurrella@gmail.com>
+Received: from ?IPv6:2409:4070:2302:945e:55e8:8c8d:159:6313? ([2409:4070:2302:945e:55e8:8c8d:159:6313])
+        by smtp.gmail.com with ESMTPSA id g11sm13462953pjs.17.2020.04.15.01.01.43
+        for <nikhilandhugula502@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 15 Apr 2020 01:01:45 -0700 (PDT)
+Date: Wed, 15 Apr 2020 13:31:41 +0530
+Message-ID: <217hdidp3i3j4tvltjkvlfka.1586937701049@email.android.com>
+From: dayakarkurrella <dayakarkurrella@gmail.com>
+To: nikhilandhugula502@gmail.com
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: base64
+
+PGRpdiBkaXI9Imx0ciI+bGV0IGJvYXJkID0gWyBbNCwgOCAsIDMsIDksIDIsIDEsIDYsIDUsIDdd
+LCBbOSwgNiwgNywgMywgNCwgNSwgOCwgMiwgMV0sIFsyLCA1LCAxLCA4LCA3LCA2LCA0LCA5LCAz
+XSwgWzUsIDQsIDgsIDEsIDMsIDIsIDksIDcsIDZdLCBbNywgMiwgOSwgNSwgNiwgNCwgMSwgMywg
+OF0sIFsxLCAzLCA2LCA3LCA5LCA4LCAyLCA0LCA1XSwgWzMsIDcsIDIsIDYsIDgsIDksIDUsIDEs
+IDRdLCBbOCwgMSwgNCwgMiwgNSwgMywgNywgNiwgOV0sIFs2LCA5LCA1LCA0LCAxLCA3LCAzLCA4
+LCAyXSBdOyBmdW5jdGlvbiBwb3NzaWJsZSh5LHgsbil7IGZvciAobGV0IGk9MDsgaTxicj4KPC9k
+aXY+PGRpdiBkaXI9Imx0ciI+PGJyPgo8L2Rpdj48ZGl2IGRpcj0ibHRyIj48YnI+CjwvZGl2Pjxk
+aXYgZGlyPSJsdHIiPjxicj4KPC9kaXY+PGRpdiBjbGFzcz0id3BzX3NpZ25hdHVyZSI+U2VudCBm
+cm9tIG15IFJlZG1pIE5vdGUgNDwvZGl2Pg==
+
